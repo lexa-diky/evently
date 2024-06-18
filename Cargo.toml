@@ -6,3 +6,4 @@ edition = "2021"
 [dependencies]
 serde = "1.0.203"
 serde_yml = "0.0.10"
+walkdir = "2"

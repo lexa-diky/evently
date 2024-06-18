@@ -1,0 +1,5 @@
+enum:login_type:
+  entries:
+    - anonymous: ANONYMOUS
+    - phone: PHONE
+    - email: EMAIL

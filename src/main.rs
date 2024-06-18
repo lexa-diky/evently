@@ -1,12 +1,11 @@
-use std::path::Path;
-use serde_yml;
-
-use crate::source::SourceLoader;
-
 mod source;
 
+use crate::source::FsSourceLoader;
+
 fn main() {
-    let loader: SourceLoader = SourceLoader::default(
-        Path::new("src/source")
-    );
+    let loader = FsSourceLoader::default("sample/login_form");
+    let sources = loader.load().unwrap();
+    for r in sources {
+        println!("{:?}", r)
+    }
 }
