@@ -13,6 +13,8 @@ pub(crate) enum SourceType {
 #[derive(Debug)]
 pub(crate) struct SourceReference {
     path_buf: PathBuf,
+    rel_path: Vec<String>,
+    name: String,
     format: SourceFormat,
     source_type: SourceType
 }
@@ -21,13 +23,17 @@ impl SourceReference {
 
     pub(crate) fn new(
         path_buf: PathBuf,
+        rel_path: Vec<String>,
+        name: String,
         format: SourceFormat,
         source_type: SourceType
     ) -> SourceReference {
         SourceReference {
-            path_buf,
-            format,
-            source_type
+            path_buf: path_buf,
+            rel_path: rel_path,
+            name: name,
+            format: format,
+            source_type: source_type
         }
     }
 }
