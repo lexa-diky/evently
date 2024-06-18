@@ -1,0 +1,7 @@
+import:
+  - login
+
+event:logout:
+  arguments:
+    - type:
+        type: login/login_type

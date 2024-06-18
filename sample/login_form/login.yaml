@@ -1,0 +1,13 @@
+enum:login_type:
+  entries:
+    - anonymous: ANONYMOUS
+    - phone: PHONE
+    - email: EMAIL
+
+event:login_pressed:
+  arguments:
+    - user_id:
+        type: string
+    - type:
+        type: login_type
+
