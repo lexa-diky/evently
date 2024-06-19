@@ -1,4 +1,5 @@
 mod source;
+mod model;
 
 use crate::source::FsSourceLoader;
 

@@ -1,8 +1,7 @@
-
 event:login_pressed:
   arguments:
     - user_id:
         type: string
     - type:
-        type: login_type
+        type: types/login_type/login_type
 

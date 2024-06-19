@@ -1,2 +1,4 @@
+name: login_form
+
 dependencies:
-  - stdlib: latest
+  - evently:stdlib:latest
