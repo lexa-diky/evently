@@ -1,4 +1,5 @@
 name: login_form
+description: A simple login form
 
 dependencies:
   - evently:stdlib:latest
